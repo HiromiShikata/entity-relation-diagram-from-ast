@@ -28,7 +28,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ## Authors
 
-* [HiromiShikata](https://github.com/HiromiShikata)
+- [HiromiShikata](https://github.com/HiromiShikata)
 
 ## Acknowledgements
 
@@ -52,6 +52,6 @@ Please refer to the project's [issues page](https://github.com/HiromiShikata/ent
 
 Future updates to this project may include:
 
-* More output format options
-* Improved error handling and messaging
-* Additional customization options
+- More output format options
+- Improved error handling and messaging
+- Additional customization options
