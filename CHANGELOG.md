@@ -1,3 +1,10 @@
+## [1.0.1](https://github.com/HiromiShikata/entity-relation-diagram-from-ast/compare/v1.0.0...v1.0.1) (2023-06-29)
+
+
+### Bug Fixes
+
+* set bin field in package.json ([94e5a43](https://github.com/HiromiShikata/entity-relation-diagram-from-ast/commit/94e5a43305d8d54154874875248f6859508ac815))
+
 # 1.0.0 (2023-06-29)
 
 
