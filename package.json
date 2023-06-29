@@ -12,6 +12,9 @@
     "build-commit": "npm run build && git add bin && git commit -m'autogen: re-build' -m'npm run build'",
     "test": "jest"
   },
+  "bin": {
+    "entity-relation-diagram-from-ast": "./bin/adapter/entry-points/cli/index.js"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/HiromiShikata/entity-relation-diagram-from-ast.git"
