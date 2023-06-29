@@ -6,6 +6,48 @@
 
 A command-line tool to output entity relation diagram with Mermaid format from AST.
 
+```mermaid
+erDiagram
+  Group {
+    string id
+    string name
+    string category
+  }
+  Item {
+    string id
+    string name
+  }
+  User {
+    string id
+    string name
+    boolean deactivated
+    Date createdAt
+  }
+  UserAddress {
+    string id
+    User userId
+    string address
+    string stringLiteral
+    number numberLiteral
+    boolean booleanLiteral
+    string nullableWithNullUnion
+    string nullableWithUndefined
+    string nullableWithQuestionMark
+    string unionLiteralsWithSameTypeNullable
+    string unionLiteralsWithSameTypeQuestionMark
+    string unionLiteralsWithSameType
+  }
+  UserGroup {
+    string id
+    User userId
+    Group groupId
+  }
+
+  UserAddress zero or one --1 User : "1?"
+  UserGroup zero or many --1 User : "n?"
+  UserGroup zero or many --1 Group : "n?"
+```
+
 ## Installation
 
 ```bash
