@@ -11,3 +11,4 @@ bin
 .npmignore
 *.map
 CHANGELOG.md
+CODEOWNERS
