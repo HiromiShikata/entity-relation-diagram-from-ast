@@ -18,6 +18,8 @@ describe('GenerateEntityRelationDiagramUseCase', () => {
               name: 'id',
               propertyType: 'string',
               isNullable: false,
+              isUnique: false,
+              isArray: false,
               acceptableValues: null,
             },
             {
@@ -25,6 +27,8 @@ describe('GenerateEntityRelationDiagramUseCase', () => {
               name: 'name',
               propertyType: 'string',
               isNullable: false,
+              isUnique: false,
+              isArray: false,
               acceptableValues: null,
             },
           ],
@@ -37,6 +41,8 @@ describe('GenerateEntityRelationDiagramUseCase', () => {
               name: 'id',
               propertyType: 'string',
               isNullable: false,
+              isUnique: false,
+              isArray: false,
               acceptableValues: null,
             },
             {
@@ -44,6 +50,8 @@ describe('GenerateEntityRelationDiagramUseCase', () => {
               name: 'name',
               propertyType: 'string',
               isNullable: false,
+              isUnique: false,
+              isArray: false,
               acceptableValues: null,
             },
           ],
@@ -56,6 +64,8 @@ describe('GenerateEntityRelationDiagramUseCase', () => {
               name: 'id',
               propertyType: 'string',
               isNullable: false,
+              isUnique: false,
+              isArray: false,
               acceptableValues: null,
             },
             {
@@ -82,6 +92,8 @@ describe('GenerateEntityRelationDiagramUseCase', () => {
               name: 'id',
               propertyType: 'string',
               isNullable: false,
+              isUnique: false,
+              isArray: false,
               acceptableValues: null,
             },
             {
