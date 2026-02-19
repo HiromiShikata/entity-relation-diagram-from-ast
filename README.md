@@ -8,25 +8,41 @@ A command-line tool to output entity relation diagram with Mermaid format from A
 
 ```mermaid
 erDiagram
+  Administrator {
+    Id id
+    User userId
+    string role
+    boolean deactivated
+    struct cachedDetail
+    Date createdAt
+  }
   Group {
-    string id
+    Id id
     string name
     string category
   }
   Item {
-    string id
+    Id id
     string name
+    typedStruct content
+    typedStruct unionedContent
+    typedStruct combined
   }
   User {
-    string id
+    Id id
     string name
     boolean deactivated
     Date createdAt
+    User parentUserId
   }
   UserAddress {
-    string id
+    Id id
     User userId
     string address
+    string stringArray
+    number numberArray
+    boolean booleanArray
+    Date dateArray
     string stringLiteral
     number numberLiteral
     boolean booleanLiteral
@@ -38,11 +54,13 @@ erDiagram
     string unionLiteralsWithSameType
   }
   UserGroup {
-    string id
+    Id id
     User userId
     Group groupId
   }
 
+  Administrator zero or many --1 User : "n?"
+  User zero or many --1 User : "n?"
   UserAddress zero or one --1 User : "1?"
   UserGroup zero or many --1 User : "n?"
   UserGroup zero or many --1 Group : "n?"
