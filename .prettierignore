@@ -13,3 +13,4 @@ bin
 CHANGELOG.md
 CODEOWNERS
 .npmrc
+.gitleaks.toml
