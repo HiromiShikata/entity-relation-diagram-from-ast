@@ -57,7 +57,10 @@ describe('.husky/pre-push', () => {
 
   afterEach(() => {
     fs.rmSync(stubBinDir, { recursive: true, force: true });
-    fs.rmSync(path.dirname(invocationLogPath), { recursive: true, force: true });
+    fs.rmSync(path.dirname(invocationLogPath), {
+      recursive: true,
+      force: true,
+    });
   });
 
   const readRecordedInvocations = (): string[] =>
@@ -128,6 +131,10 @@ describe('.husky/pre-push', () => {
     const result = runHookWithStubbedChecks({ test: 0, lint: 0, typecheck: 0 });
 
     expect(result.exitCode).toBe(0);
-    expect(readRecordedInvocations()).toEqual(['test', 'run lint', 'run typecheck']);
+    expect(readRecordedInvocations()).toEqual([
+      'test',
+      'run lint',
+      'run typecheck',
+    ]);
   });
 });
