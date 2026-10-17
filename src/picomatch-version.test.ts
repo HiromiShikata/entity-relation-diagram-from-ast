@@ -54,12 +54,8 @@ const toComparableVersionNumber = (version: string): number => {
 
 const isWithinPicomatchVulnerableRange = (version: string): boolean => {
   const versionNumber = toComparableVersionNumber(version);
-  const vulnerableRangeLowerBoundInclusive = toComparableVersionNumber(
-    '4.0.0',
-  );
-  const vulnerableRangeUpperBoundExclusive = toComparableVersionNumber(
-    '4.0.4',
-  );
+  const vulnerableRangeLowerBoundInclusive = toComparableVersionNumber('4.0.0');
+  const vulnerableRangeUpperBoundExclusive = toComparableVersionNumber('4.0.4');
   return (
     versionNumber >= vulnerableRangeLowerBoundInclusive &&
     versionNumber < vulnerableRangeUpperBoundExclusive

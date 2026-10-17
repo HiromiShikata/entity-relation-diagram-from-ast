@@ -55,12 +55,9 @@ const toComparableVersionNumber = (version: string): number => {
 
 const isWithinBraceExpansionVulnerableRange = (version: string): boolean => {
   const versionNumber = toComparableVersionNumber(version);
-  const vulnerableRangeLowerBoundInclusive = toComparableVersionNumber(
-    '4.0.0',
-  );
-  const vulnerableRangeUpperBoundExclusive = toComparableVersionNumber(
-    '5.0.11',
-  );
+  const vulnerableRangeLowerBoundInclusive = toComparableVersionNumber('4.0.0');
+  const vulnerableRangeUpperBoundExclusive =
+    toComparableVersionNumber('5.0.11');
   return (
     versionNumber >= vulnerableRangeLowerBoundInclusive &&
     versionNumber < vulnerableRangeUpperBoundExclusive
