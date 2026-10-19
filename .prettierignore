@@ -7,7 +7,6 @@
 reports
 dist
 bin
-.husky
 .npmignore
 *.map
 CHANGELOG.md
