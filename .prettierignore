@@ -21,3 +21,4 @@ LICENSE
 CODEOWNERS
 *.toml
 .npmrc
+.husky/pre-push
