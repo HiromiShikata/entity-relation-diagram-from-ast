@@ -41,6 +41,7 @@
   },
   "homepage": "https://github.com/HiromiShikata/entity-relation-diagram-from-ast#readme",
   "devDependencies": {
+    "@babel/core": "7.29.6",
     "@eslint/js": "10.0.1",
     "@semantic-release/changelog": "^7.0.0",
     "@semantic-release/commit-analyzer": "13.0.1",
@@ -79,6 +80,14 @@
     "test-exclude": {
       "minimatch": "^11.0.1",
       "glob": "^14.0.2"
+    },
+    "@babel/helper-compilation-targets": {
+      "browserslist": "4.28.8",
+      "caniuse-lite": "1.0.30001810",
+      "electron-to-chromium": "1.5.420",
+      "node-releases": "2.0.54",
+      "baseline-browser-mapping": "2.11.20",
+      "update-browserslist-db": "1.3.2"
     }
   }
 }
