@@ -48,8 +48,8 @@
     "@semantic-release/npm": "13.2.0",
     "@semantic-release/release-notes-generator": "14.1.1",
     "@types/jest": "^30.0.0",
-    "@typescript-eslint/eslint-plugin": "8.72.2",
-    "@typescript-eslint/parser": "8.72.2",
+    "@typescript-eslint/eslint-plugin": "8.73.0",
+    "@typescript-eslint/parser": "8.73.0",
     "@typescript/native": "npm:typescript@^7.0.2",
     "conventional-changelog-conventionalcommits": "^10.4.1",
     "eslint": "10.15.0",
@@ -67,5 +67,18 @@
   },
   "dependencies": {
     "ast-to-entity-definitions": "^3.5.1"
+  },
+  "overrides": {
+    "ast-to-entity-definitions": {
+      "minimatch": "^11.0.1",
+      "rimraf": "^6.1.4"
+    },
+    "jest": {
+      "glob": "^14.0.2"
+    },
+    "test-exclude": {
+      "minimatch": "^11.0.1",
+      "glob": "^14.0.2"
+    }
   }
 }
